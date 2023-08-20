@@ -1,4 +1,4 @@
-# Chat
+# Pepega Chat
 
 To start your Phoenix server:
 
