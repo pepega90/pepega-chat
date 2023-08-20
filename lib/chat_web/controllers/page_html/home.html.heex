@@ -98,16 +98,14 @@
         })
 
         window.channel.on("chat:newUser", (data) => {
-          console.log(data);
           addNewUser(data.newUser);
         })
 
         window.channel.on("orang", ({data}) => {
-          let res = data[0];
-          if(res) {
-            for(let i = 0; i < res.length; i++) {
-              if(res[i].user)
-                addNewUser(res[i].user); 
+          if(data) {
+            for(let i = 0; i < data.length; i++) {
+              if(data[i].user)
+                addNewUser(data[i].user); 
             }
           }
         })

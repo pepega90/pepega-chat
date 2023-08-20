@@ -16,7 +16,7 @@ defmodule ChatWeb.ChatChannel do
   def handle_info("after_join", socket) do
     Presence.track(self(), "after_join", socket.id, %{})
 
-    data = Presence.list("after_join")
+    [data] = Presence.list("after_join")
     |> Enum.map(fn {_, data} -> data[:metas] end)
 
     push(socket, "orang", %{data: data})
