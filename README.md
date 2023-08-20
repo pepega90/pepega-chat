@@ -1,5 +1,7 @@
 # Pepega Chat
 
+<img src="https://github.com/pepega90/pepega-chat/blob/main/preview.gif" />
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
